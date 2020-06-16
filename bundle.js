@@ -40,21 +40,20 @@ function Phrase(content) {
     // we use || [] because match returns null if there is no match and throws an error
   }
 
-  this.processor = function() {
-    return this.letters().toLowerCase();
-  }
 
-  // Returns content processed for palindrome testing,
+  // Returns content processed for palindrome testing.
   this.processedContent = function processedContent() {
-    return this.processor(this.content);
+    return this.letters().toLowerCase(this.content);
   }
 
   // Returns true for phrase being a palindrome, false otherwise.
   this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
-    // returns result of this comparison
+  if (this.processedContent()) {
+      return this.processedContent() === this.processedContent().reverse();
+    } else {
+      return false;
+    }
   }
-
 }
 
 },{}]},{},[1]);
