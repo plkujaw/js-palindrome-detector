@@ -184,6 +184,8 @@ textarea {
   font-family     : 'IBM Plex Serif', serif;
   font-size       : 1em;
   font-style      : italic;
+  outline         : none;
+  overflow        : auto;
   resize          : none;
 }
 /* div {
