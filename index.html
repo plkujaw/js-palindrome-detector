@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="bundle.js"></script>
-    <title>palindrome detector</title>
-  </head>
-  <body>
-    <h1>palindrome detector</h1>
-    <form id="palindromeTester">
-      <textarea name="phrase" rows="10" cols="30"></textarea>
-      <br>
-      <button type="submit">am i a palindrome?</button>
-    </form>
 
-    <!-- <h2>am i?</h2> -->
-    <p id="palindromeResult"></p>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="bundle.js"></script>
+  <title>palindrome detector</title>
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="header">
+      <h1>palindrome detector</h1>
+    </div>
+    <div class="main">
+      <div class="form">
+        <form id="palindromeTester">
+          <textarea name="phrase" rows="5" cols="50" placeholder="type phrase to check"></textarea>
+          <br>
+          <button type="submit">check</button>
+        </form>
+      </div>
+      <div class="result">
+        <p id="palindromeResult"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Palindrome" target="_blank" rel="noreferrer">wait, what?</a></li>
+        <li><a href="https://kubajawor.dev" target="_blank" rel="noreferrer">who did dis?</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
-
-<!-- Able was I, ere I saw Elba. -->
